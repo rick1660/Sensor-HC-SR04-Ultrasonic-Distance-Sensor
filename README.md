@@ -43,3 +43,6 @@
 
 
 
+### Referencias: https://leantec.es/wp-content/uploads/2019/06/Leantec.ES-HC-SR04.pdf , https://pdf1.alldatasheet.com/datasheet-pdf/view/1132203/ETC2/HC-SR04.html
+
+
