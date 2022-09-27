@@ -2,8 +2,8 @@
 
 ![]('https://img.dxcdn.com/newprdimgs/20201222/11addabbf77d0d9ff7757832f45a25fb.jpg')
 ![Sensor HC-SR04](https://github.com/rick1660/Sensor-HC-SR04-Ultrasonic-Distance-Sensor/blob/main/senseor2.jpg)
-background-image: url('https://github.com/rick1660/Sensor-HC-SR04-Ultrasonic-Distance-Sensor/blob/main/senseor2.jpg');
-
+ <img src="[https://ibb.co/gPvZ7JQ.jpg](https://github.com/rick1660/Sensor-HC-SR04-Ultrasonic-Distance-Sensor/blob/main/senseor2.jpg)" width="300" height="300" alt="malak artwork">
+ 
 ## Como trabaja el Sensor HC-SR04
 
 ### Los sensores ultrasónicos usan sonido para determinar la distancia entre el sensor y el objeto más cercano en su camino. ¿Cómo hacen esto los sensores ultrasónicos? Los sensores ultrasónicos son esencialmente sensores de sonido, pero operan a una frecuencia por encima del oído humano. El sensor HC-SR04 esta compuesto por un emisor y un receptor de ultrasonidos. Estos nos ayuda a medir la distancia a la que se encuentra un objeto justo frente a el, enviando un pulso de ultrasonidos y midiendo el tiempo que transcurre hasta que vuelve dicho pulso.
