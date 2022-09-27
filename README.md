@@ -2,7 +2,7 @@
 
 ![]('https://img.dxcdn.com/newprdimgs/20201222/11addabbf77d0d9ff7757832f45a25fb.jpg')
 ![Sensor HC-SR04](https://github.com/rick1660/Sensor-HC-SR04-Ultrasonic-Distance-Sensor/blob/main/senseor2.jpg)
- <img src="[https://ibb.co/gPvZ7JQ.jpg](https://github.com/rick1660/Sensor-HC-SR04-Ultrasonic-Distance-Sensor/blob/main/senseor2.jpg)" width="300" height="300" alt="malak artwork">
+
  
 ## Como trabaja el Sensor HC-SR04
 
