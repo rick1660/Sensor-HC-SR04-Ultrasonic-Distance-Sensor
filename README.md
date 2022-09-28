@@ -39,8 +39,56 @@
 
 
 ## Conectar el sensor HC-SR04 a la Raspberry pi pico
+![Sensor HC-SR04](https://github.com/rick1660/Sensor-HC-SR04-Ultrasonic-Distance-Sensor/blob/main/conex.jpg?raw=true)
 
 
+##Codigo en python para su funcionamiento
+
+~~~
+#Importamos del componente pin de la libreria machine que sirve para poder controlar los pines GPIO
+from machine import Pin
+
+#Importamos la libreria utime que sirve para indicar el tiempo que el microcontrolador lleva encendido, medir intervalos de tiempo e introducir retardos (esperas) en la ejecución de los programas.
+import utime
+
+
+#Creamo dos objetos de los pines 3 GPIO y 2 GPIO de la pico
+trigger = Pin(3, Pin.OUT)
+echo = Pin(2, Pin.IN)
+
+#Creamos una funcion en la que se ejecutara nuestro codigo
+def go():
+
+    #Apagamos nuestro pin trigger solo para asegurar que se encuentre apagado
+    trigger.low()
+    #Dejamos apagado el pin trigger por 2 microsegundos
+    utime.sleep_us(2)
+    #Encendemos nuevamente el pin trigger
+    trigger.high()
+    #Dejamos encendido el pin trigger por 5 microsegundos
+    utime.sleep_us(5)
+    #volvemos a apagar el puerto trigger
+    trigger.low()
+    #Creamo un while para que permite verificar si el pin no echo recibe alguna señal
+    while echo.value() == 0:
+       #En caso de no recibir alguna señal creamo una variable que guarda una marca de tiempo en microsegundos
+       signaloff = utime.ticks_us()
+  
+    #Creamo un while para que permite verificar si el pin  echo recibe alguna señal
+    while echo.value() == 1:
+       #En caso de no recibir alguna señal creamo una variable que guarda una marca de tiempo en microsegundos
+       signalon = utime.ticks_us()
+    #Creamos una variable que alamacenara el valor del tiempo total que tarda el pulso en salir del sensor, golpear el objeto y regresar al sensor como un eco.
+    timepassed = signalon - signaloff
+    #creamos una variable que guardara el resultado de multiplicar el tiempo por la velodicad del sonido (cm por microsegundos) y lo dividimos entre dos por que solo necesitamos saber la distancia del objeto al sensor
+    distance = (timepassed * 0.0343) / 2
+    #imprimimos la distancia recorrida
+    print("The distance from object is ",distance,"cm")
+#While que permite que la funcion go se repita cada segundo
+while True:
+   go()
+   utime.sleep(1)
+~~~
 
                                           
 
