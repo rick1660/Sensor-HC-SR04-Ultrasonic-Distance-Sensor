@@ -35,7 +35,7 @@
 
 ### Centimetros = uS*0,01715
 
-![Diagrama]()
+![Diagrama](https://electronicamade.com/wp-content/uploads/2020/04/hc-sr04.png)
 
 
 
