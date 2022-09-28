@@ -35,7 +35,7 @@
 
 ### Centimetros = uS*0,01715
 
-![Diagrama](https://github.com/rick1660/Sensor-HC-SR04-Ultrasonic-Distance-Sensor/blob/main/diagrama2.png)
+![Diagrama](https://www.zonamaker.com/images/contenido/arduino/modulos_sensores_shields/ultrasonido_HCSR04/Esquema_onda.jpg)
 
 
 
