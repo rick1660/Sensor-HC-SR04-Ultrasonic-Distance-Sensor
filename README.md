@@ -38,6 +38,9 @@
 ![Diagrama](https://electronicamade.com/wp-content/uploads/2020/04/hc-sr04.png)
 
 
+## Conectar el sensor HC-SR04 a la Raspberry pi pico
+
+
 
                                           
 
